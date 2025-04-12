@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
-struct ContentView: View {
+struct MainView: View {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +24,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }
