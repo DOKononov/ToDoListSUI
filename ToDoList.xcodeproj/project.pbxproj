@@ -29,6 +29,7 @@
 		569FB3A02DAA912E008A57A9 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569FB39F2DAA912E008A57A9 /* LoginVM.swift */; };
 		569FB3A22DAA9139008A57A9 /* RegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569FB3A12DAA9139008A57A9 /* RegisterVM.swift */; };
 		569FB3A42DAA9148008A57A9 /* ToDoListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569FB3A32DAA9148008A57A9 /* ToDoListItemVM.swift */; };
+		569FB3A62DAA98A1008A57A9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569FB3A52DAA98A1008A57A9 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		569FB39F2DAA912E008A57A9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		569FB3A12DAA9139008A57A9 /* RegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVM.swift; sourceTree = "<group>"; };
 		569FB3A32DAA9148008A57A9 /* ToDoListItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemVM.swift; sourceTree = "<group>"; };
+		569FB3A52DAA98A1008A57A9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				569FB3892DAA904A008A57A9 /* ToDoListView.swift */,
 				569FB38B2DAA9057008A57A9 /* NewItemView.swift */,
 				569FB38D2DAA9060008A57A9 /* LoginView.swift */,
+				569FB3A52DAA98A1008A57A9 /* HeaderView.swift */,
 				569FB38F2DAA906C008A57A9 /* RegisterView.swift */,
 				569FB3912DAA9098008A57A9 /* ToDoListItemView.swift */,
 			);
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				569FB38E2DAA9060008A57A9 /* LoginView.swift in Sources */,
+				569FB3A62DAA98A1008A57A9 /* HeaderView.swift in Sources */,
 				569FB3812DAA8F73008A57A9 /* MainView.swift in Sources */,
 				569FB39E2DAA9126008A57A9 /* NewItemVM.swift in Sources */,
 				569FB3A22DAA9139008A57A9 /* RegisterVM.swift in Sources */,
