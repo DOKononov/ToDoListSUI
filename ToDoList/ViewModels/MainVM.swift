@@ -5,4 +5,25 @@
 //  Created by Dmitry Kononov on 12.04.25.
 //
 
-import Foundation
+import SwiftUI
+import FirebaseAuth
+
+@Observable
+final class MainVM {
+    var currentUserId: String = ""
+    private var handler: AuthStateDidChangeListenerHandle?
+    
+    public var isSignedIn: Bool {
+        return Auth.auth().currentUser != nil
+    }
+    
+    init() {
+        self.handler = Auth.auth().addStateDidChangeListener { [weak self] _, user in
+            DispatchQueue.main.async {
+                self?.currentUserId = user?.uid ?? ""
+            }
+        }
+    }
+    
+}
+
