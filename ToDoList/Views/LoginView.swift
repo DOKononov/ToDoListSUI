@@ -13,33 +13,38 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                HeaderView()
-                Form {
-                    TextField("Email adress", text: $email)
-                    SecureField("Password", text: $password)
-                    
-                    Button {
-                        //login
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundStyle(.blue)
-                            Text("Login")
-                                .foregroundStyle(.white)
-                                .bold()
-                        }
-                    }
-                }
+                HeaderView(
+                    title: "To Do List",
+                    subtitle: "Get things done",
+                    color: .pink,
+                    rotation: 15
+                )
+                TextField("Email adress", text: $email)
+                    .textFieldStyle(.roundedBorder)
+                SecureField("Password", text: $password)
+                    .textFieldStyle(.roundedBorder)
                 
-                VStack {
-                    Text("New around here?")
-                    NavigationLink("Create an account") {
-                        RegisterView()
-                    }
+                Button {
+                    //login
+                } label: {
+                    Text("Login")
+                        .foregroundStyle(.white)
+                        .font(.headline)
+                        .frame(width: 200, height: 40, alignment: .center)
+                        .background { Rectangle()
+                                .foregroundStyle(.blue)
+                                .cornerRadius(10)
+                        }
                 }
-                .padding(.bottom, 50)
                 Spacer()
+                Text("New around here?")
+                NavigationLink("Create an account") {
+                    RegisterView()
+                }
+                .navigationTitle("")
             }
+            .padding(.horizontal)
+            .padding(.bottom, 50)
         }
     }
 }
