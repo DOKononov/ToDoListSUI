@@ -9,6 +9,6 @@ import SwiftUI
 
 @Observable
 final class ToDoListVM {
-    
+    var showinNewItemView: Bool = false
 }
 
