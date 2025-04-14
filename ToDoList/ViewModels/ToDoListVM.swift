@@ -5,4 +5,10 @@
 //  Created by Dmitry Kononov on 12.04.25.
 //
 
-import Foundation
+import SwiftUI
+
+@Observable
+final class ToDoListVM {
+    
+}
+

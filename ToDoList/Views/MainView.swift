@@ -10,13 +10,24 @@ import FirebaseCore
 
 struct MainView: View {
     @State var viewmodel = MainVM()
-
+    
     var body: some View {
         if viewmodel.isSignedIn, !viewmodel.currentUserId.isEmpty {
-            //sign in
-            ToDoListView()
+            accountView
         } else {
             LoginView()
+        }
+    }
+    
+//    @ViewBuilder
+    private var accountView: some View {
+        TabView {
+            Tab("Home", systemImage: "house") {
+                ToDoListView(userId: viewmodel.currentUserId)
+            }
+            Tab("Profile", systemImage: "person.circle") {
+                ProfileView()
+            }
         }
     }
 }
