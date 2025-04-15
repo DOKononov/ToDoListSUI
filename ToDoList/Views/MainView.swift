@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseCore
 
 struct MainView: View {
-    @State var viewmodel = MainVM()
+    @StateObject var viewmodel = MainVM()
     
     var body: some View {
         if viewmodel.isSignedIn, !viewmodel.currentUserId.isEmpty {

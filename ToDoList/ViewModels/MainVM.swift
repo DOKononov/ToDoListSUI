@@ -8,9 +8,8 @@
 import SwiftUI
 import FirebaseAuth
 
-@Observable
-final class MainVM {
-    var currentUserId: String = ""
+final class MainVM: ObservableObject {
+    @Published var currentUserId: String = ""
     private var handler: AuthStateDidChangeListenerHandle?
     
     public var isSignedIn: Bool {
