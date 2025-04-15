@@ -18,7 +18,7 @@ final class LoginVM {
 
     func login() {
         guard validate() else { return }
-//        Auth.auth().signIn(withEmail: email, password: password)
+        Auth.auth().signIn(withEmail: email, password: password)
         
     }
     
