@@ -10,5 +10,9 @@ import SwiftUI
 @Observable
 final class ToDoListVM {
     var showinNewItemView: Bool = false
+    
+    func delete(item: ToDoListItem) {
+        
+    }
 }
 

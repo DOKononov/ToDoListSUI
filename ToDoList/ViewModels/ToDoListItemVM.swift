@@ -9,6 +9,8 @@ import SwiftUI
 
 @Observable
 final class ToDoListItemVM {
-    
+    func toddleIsDone(for item: ToDoListItem) {
+        
+    }
 }
 
